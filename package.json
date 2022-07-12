@@ -1,11 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "homepage": "https://{anupriya-21}.github.io",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "keywords": [],
   "author": "",
